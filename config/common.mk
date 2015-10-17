@@ -112,11 +112,17 @@ PRODUCT_COPY_FILES += \
     vendor/crdroid/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/crdroid/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+# ViperFX
+PRODUCT_COPY_FILES += \
+    vendor/crdroid/prebuilt/viper/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    vendor/crdroid/prebuilt/viper/lib/libv4a_fx_ics.so:system/lib/libv4a_fx_ics.so \
+    vendor/crdroid/prebuilt/viper/ViPER4Android.apk:system/priv-app/ViPER4Android.apk
+    
+
 # Custom crDroid packages
 PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
-    AudioFX \
     CMFileManager \
     Eleven \
     LockClock \
